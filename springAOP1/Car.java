@@ -40,12 +40,17 @@ public class Car {
 	public void setCarBrand(String carBrand) {
 		this.carBrand = carBrand;
 	}
+	
+	public void setCarInfo()
+	{
+		System.out.println("this is a user setter without argument");
+	}
 
 
 	public void getCarInfo()
 	{
 		System.out.println("the car's brand is " + carBrand );
-		System.out.println("the color of the front door is " + this.getFrontDoorL().getColor() );
+		System.out.println("the color of the front door is " + getFrontDoorL().getColor() );
 	}
 
 }

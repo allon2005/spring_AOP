@@ -11,7 +11,7 @@
 
 	<aop:aspectj-autoproxy/>  <!-- this is to let spring to scan all the aspect beans -->
 	
-	<bean id="car" class="springAOP1.Car">
+	<bean name="car" class="springAOP1.Car">
 		<property name="carBrand" value="GMC" />
 		<property name="color" value="silver" />
 		<property name="frontDoorL" ref="frontDoorL"/>
@@ -21,7 +21,7 @@
 		<property name="color" value="silver" />
 	</bean>
 	
-	<bean id="loggingAspect" class="springAspect.LoggingAspect"></bean>  <!-- for the spring to load the LoggingAspect class -->
+	<bean id="loggingAspect" class="springAspect.LoggingAspect"/>  <!-- for the spring to load the LoggingAspect class -->
 	
 	
 

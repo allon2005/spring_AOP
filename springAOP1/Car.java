@@ -43,9 +43,31 @@ public class Car {
 	
 	public void setCarInfo()
 	{
-		System.out.println("this is a user setter without argument");
+		System.out.println("this is a user car info setter without argument");
 	}
 
+	public void setCarInfo1() throws Exception
+	{
+		System.out.println("this is a user car info setter1 withou  argument");
+		throw new Exception("test exception"); 
+	}
+	
+	public void setCarInfo2() throws Exception
+	{
+		System.out.println("this is a user car info setter2 without argument, throw exception");
+		throw new Exception("test exception"); 
+	}
+	
+	public void setCarInfo3(String type)
+	{
+		System.out.println("the type of the car is : " + type); 
+	}
+	
+	public String setCarInfo4(String type)
+	{
+		return type;
+	}
+	
 
 	public void getCarInfo()
 	{

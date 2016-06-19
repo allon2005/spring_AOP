@@ -13,7 +13,21 @@ public class MakingCar {
 		car.getCarInfo();  //!!!! if only using loggingAdvice1, this will only invoke the loggingAdvice1 twice. It supposes to invoke it three times (getCarInfo(), getFrontDoorL() and getColor()). Why?????
 		/*System.out.println();
 		car.getFrontDoorL().getColor();  //!!!! if only using loggingAdvice1, this will invoke the loggingAdvice1 twice, good!
-*/
+		 */
+
+		car.setCarInfo();
+		try {
+			car.setCarInfo2();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+
+		car.setCarInfo3("SUV");
+
+		car.setCarInfo4("truck");
+		
 		((ConfigurableApplicationContext)context).close();
 	}
 
